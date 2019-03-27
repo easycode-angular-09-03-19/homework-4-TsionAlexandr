@@ -1,0 +1,3 @@
+<div [className]="todo-list">   
+    <app-todo-item (delTodo)="deleteTodo($event)" (compTodo)="completeTodo($event)" *ngFor="let todo of todoList" [todo]="todo"></app-todo-item>    
+</div>
