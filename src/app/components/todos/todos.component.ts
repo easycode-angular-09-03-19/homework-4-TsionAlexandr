@@ -57,7 +57,7 @@ export class TodosComponent implements OnInit {
 			return;
 	}
 
-	Todocomplete() {
+	completeTodo() {
 		this.todoList.forEach((todo) => {
 		  todo.completed = true;
 		});
