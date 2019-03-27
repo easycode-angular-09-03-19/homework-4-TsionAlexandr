@@ -1,0 +1,10 @@
+<div [className]="'container'">
+	<div [className]="'todo-unit'">
+		<div [className]="'text'" [ngClass]="{ completed: isTodoCompleted }">{{ todo.text }}</div>
+		<div [className]="'btn-wrapper'">
+			<button [className]="'btn-del'" id="deleteTodo" (click)="deleteTodo()">Delete</button>
+			<button [className]="'btn-comp'" id="completeTodo" (click)="completeTodo()">Complete</button>
+		</div>	
+	</div>
+</div>
+
